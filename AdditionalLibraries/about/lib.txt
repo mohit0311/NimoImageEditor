@@ -1,0 +1,4 @@
+In the "AdditionalLibraries" directory two libraries added with their header file and library file.
+Libraries are-
+1.GLFW
+2.GLEW
