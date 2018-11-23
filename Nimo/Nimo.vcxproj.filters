@@ -18,8 +18,29 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="test.cpp">
+    <ClCompile Include="src\MainWindow\main_window.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\shaders\shaders.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\MainWindow\main_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shaders\shaders.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="about\about.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\shaders\Shader_GLSL\fragment_shader.txt" />
+    <Text Include="src\shaders\Shader_GLSL\vertex_shader.txt" />
   </ItemGroup>
 </Project>
