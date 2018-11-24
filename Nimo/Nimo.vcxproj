@@ -19,11 +19,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="build.cpp" />
     <ClCompile Include="src\MainWindow\main_window.cpp" />
     <ClCompile Include="src\shaders\shaders.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\cMacros\macros.h" />
     <ClInclude Include="src\MainWindow\main_window.h" />
     <ClInclude Include="src\shaders\shaders.h" />
   </ItemGroup>
