@@ -21,5 +21,27 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-@author Dipesh Chouhan*/
+@author Dipesh Chouhan\
+@see shaders.cpp
+*/
+
 #pragma once
+#include <string>
+#include <iostream>
+#include <vector>
+
+
+class Shaders {
+private:
+	Shaders() {};
+	~Shaders() {};
+	static std::string getShaderSource(const char* shaderFilePath);
+	static std::vector<char> compileShader(unsigned int shaderType, const char* shaderFilePath, int* result,
+		int* infoLogLength);
+	static std::vector<char> linkProgram_deleteShaders(unsigned int* programShader, int* result, int* infoLogLength);
+
+public:
+	static unsigned int loadShaders(const char* vertexShaderFilePath, const char* fragmentShaderFiledPath);
+
+
+};
